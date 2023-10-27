@@ -1,12 +1,19 @@
 // App.js
 import React from 'react';
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import './App.css'
 
-function App() {
+
+
+const App = () => {
+  
+
   return (
     <div>
-      <Navbar />
-      {/* Rest of your content */}
+      <Navbar/>
+      <Hero/>
+      {/* Other content */}
     </div>
   );
 }
