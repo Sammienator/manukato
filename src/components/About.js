@@ -21,7 +21,7 @@ export default function Example() {
      
       <>
       
-      <div class=" -mx-auto flex flex-wrap items-center mt-6 mb-6">
+      <div id='about' class=" -mx-auto flex flex-wrap items-center mt-6 mb-6">
           <div class="w-full px-4 lg:w-1/2">
             <div class="mb-12 lg:mb-0">
               <h2 class="mb-5 text-3xl font-bold leading-tight text-black sm:text-[40px] sm:leading-tight md:text-[45px] md:leading-tight lg:text-[38px] lg:leading-tight xl:text-[45px] xl:leading-tight">
@@ -39,7 +39,7 @@ export default function Example() {
 
               <form class="mb-7 flex max-w-[445px] flex-wrap">
                 <input type="email" class="mr-3 mb-3 h-[50px] w-full rounded border border-form-stroke bg-white px-5 text-sm text-body-color outline-none focus:border-primary focus-visible:shadow-none sm:max-w-[220px] md:max-w-[315px] lg:max-w-[250px] xl:max-w-[315px]" placeholder="Your work mail"/>
-                <button class="mb-3 h-[50px] rounded bg-primary px-6 text-sm text-white transition hover:bg-opacity-90">
+                <button class="mb-3 h-[50px] rounded bg-primary px-6 text-sm text-black transition hover:bg-opacity-90">
                   Notify Me!
                 </button>
               </form>
