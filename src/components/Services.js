@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import 'aos/dist/aos.css';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Services = () => {
   useEffect(() => {
@@ -8,29 +8,51 @@ const Services = () => {
   }, []);
 
   return (
-    <section id="services" className="py-16 bg-gray-100">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8" data-aos="fade-up">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-            <i className="fas fa-perfume text-4xl text-pink-500 mb-4"></i>
-            <h3 className="text-xl font-semibold mb-2">Designer Perfumes</h3>
-            <p className="text-gray-600">Discover our exclusive collection of designer perfumes.</p>
+    <section id="services" className="py-12 bg-gray-100">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Our Services</h2>
+
+        {/* Perfumes */}
+        <div className="flex flex-col md:flex-row items-center mb-8" data-aos="fade-right">
+          <div className="md:w-1/2 p-4">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">Designer Perfumes</h3>
+            <p className="text-gray-600">Explore our collection of exquisite designer perfumes.</p>
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="400">
-            <i className="fas fa-shopping-bag text-4xl text-purple-500 mb-4"></i>
-            <h3 className="text-xl font-semibold mb-2">Bags</h3>
-            <p className="text-gray-600">Explore our range of stylish and trendy bags.</p>
+          <div className="md:w-1/2 p-4">
+            <img src="perfume.jpg" alt="Perfume" className="w-full h-auto rounded-lg" />
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="600">
-            <i className="fas fa-lipstick text-4xl text-red-500 mb-4"></i>
-            <h3 className="text-xl font-semibold mb-2">Lipsticks</h3>
-            <p className="text-gray-600">Find the perfect shade of lipstick to complement your style.</p>
+        </div>
+
+        {/* Bags */}
+        <div className="flex flex-col md:flex-row-reverse items-center mb-8" data-aos="fade-left">
+          <div className="md:w-1/2 p-4">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">Bags</h3>
+            <p className="text-gray-600">Discover our collection of trendy designer bags.</p>
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="800">
-            <i className="fas fa-makeup-brush text-4xl text-yellow-500 mb-4"></i>
-            <h3 className="text-xl font-semibold mb-2">Makeup</h3>
-            <p className="text-gray-600">Browse through our makeup collection for a flawless look.</p>
+          <div className="md:w-1/2 p-4">
+            <img src="bag.jpg" alt="Bag" className="w-full h-auto rounded-lg" />
+          </div>
+        </div>
+
+        {/* Lipstick */}
+        <div className="flex flex-col md:flex-row items-center mb-8" data-aos="fade-right">
+          <div className="md:w-1/2 p-4">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">Lipstick</h3>
+            <p className="text-gray-600">Find your perfect shade with our range of lipsticks.</p>
+          </div>
+          <div className="md:w-1/2 p-4">
+            <img src="lipstick.jpg" alt="Lipstick" className="w-full h-auto rounded-lg" />
+          </div>
+        </div>
+
+        {/* Makeup */}
+        <div className="flex flex-col md:flex-row-reverse items-center" data-aos="fade-left">
+          <div className="md:w-1/2 p-4">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">Makeup</h3>
+            <p className="text-gray-600">Enhance your beauty with our quality makeup products.</p>
+          </div>
+          <div className="md:w-1/2 p-4">
+            <img src="makeup.jpg" alt="Makeup" className="w-full h-auto rounded-lg" />
           </div>
         </div>
       </div>
