@@ -2,57 +2,92 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Services = () => {
+const ServicesSection = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ once: true });
   }, []);
 
   return (
-    <section id="services" className="py-12 bg-gray-100">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Our Services</h2>
+    <section className="bg-gray-100 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-12">
+          Our Services
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Service 1 */}
+          <div
+            className="p-6 bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+          >
+            <img
+              className="h-24 w-auto mx-auto"
+              src="service1.jpg"
+              alt="Service 1"
+            />
+            <h3 className="text-xl font-semibold text-gray-900 mt-4">
+              Service 1
+            </h3>
+            <p className="text-gray-600 mt-2">
+              Description of Service 1. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+          </div>
 
-        {/* Perfumes */}
-        <div className="flex flex-col md:flex-row items-center mb-8" data-aos="fade-right">
-          <div className="md:w-1/2 p-4">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Designer Perfumes</h3>
-            <p className="text-gray-600">Explore our collection of exquisite designer perfumes.</p>
+          {/* Service 2 */}
+          <div
+            className="p-6 bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+          >
+            <img
+              className="h-24 w-auto mx-auto"
+              src="service2.jpg"
+              alt="Service 2"
+            />
+            <h3 className="text-xl font-semibold text-gray-900 mt-4">
+              Service 2
+            </h3>
+            <p className="text-gray-600 mt-2">
+              Description of Service 2. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
           </div>
-          <div className="md:w-1/2 p-4">
-            <img src="perfume.jpg" alt="Perfume" className="w-full h-auto rounded-lg" />
-          </div>
-        </div>
 
-        {/* Bags */}
-        <div className="flex flex-col md:flex-row-reverse items-center mb-8" data-aos="fade-left">
-          <div className="md:w-1/2 p-4">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Bags</h3>
-            <p className="text-gray-600">Discover our collection of trendy designer bags.</p>
+          {/* Service 3 */}
+          <div
+            className="p-6 bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+          >
+            <img
+              className="h-24 w-auto mx-auto"
+              src="service3.jpg"
+              alt="Service 3"
+            />
+            <h3 className="text-xl font-semibold text-gray-900 mt-4">
+              Service 3
+            </h3>
+            <p className="text-gray-600 mt-2">
+              Description of Service 3. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
           </div>
-          <div className="md:w-1/2 p-4">
-            <img src="bag.jpg" alt="Bag" className="w-full h-auto rounded-lg" />
-          </div>
-        </div>
 
-        {/* Lipstick */}
-        <div className="flex flex-col md:flex-row items-center mb-8" data-aos="fade-right">
-          <div className="md:w-1/2 p-4">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Lipstick</h3>
-            <p className="text-gray-600">Find your perfect shade with our range of lipsticks.</p>
-          </div>
-          <div className="md:w-1/2 p-4">
-            <img src="lipstick.jpg" alt="Lipstick" className="w-full h-auto rounded-lg" />
-          </div>
-        </div>
-
-        {/* Makeup */}
-        <div className="flex flex-col md:flex-row-reverse items-center" data-aos="fade-left">
-          <div className="md:w-1/2 p-4">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Makeup</h3>
-            <p className="text-gray-600">Enhance your beauty with our quality makeup products.</p>
-          </div>
-          <div className="md:w-1/2 p-4">
-            <img src="makeup.jpg" alt="Makeup" className="w-full h-auto rounded-lg" />
+          {/* Service 4 */}
+          <div
+            className="p-6 bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+          >
+            <img
+              className="h-24 w-auto mx-auto"
+              src="service4.jpg"
+              alt="Service 4"
+            />
+            <h3 className="text-xl font-semibold text-gray-900 mt-4">
+              Service 4
+            </h3>
+            <p className="text-gray-600 mt-2">
+              Description of Service 4. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
           </div>
         </div>
       </div>
@@ -60,4 +95,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesSection;

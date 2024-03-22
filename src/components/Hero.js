@@ -23,8 +23,8 @@ const HeroSection = () => {
         </p>
         <div className="mt-8 flex justify-center space-x-6" data-aos="fade-up">
           <a
-            href="https://wa.me/c/254700405228"
-            target="_blank"
+             href="#about"
+             target="_blank"
             rel="noopener noreferrer"
             className="bg-black text-white px-6 py-2 rounded-full hover:bg-red-600 transition duration-300"
           >
@@ -32,8 +32,9 @@ const HeroSection = () => {
            View Our Perfumes.
           </a>
           <a
-            href="#about"
-            target="_blank"
+          href="https://wa.me/c/254700405228"
+          target="_blank"
+           
             rel="noopener noreferrer"
             className="bg-white text-black px-6 py-2 rounded-full hover:bg-blue-600 transition duration-300"
           >
